@@ -23,7 +23,7 @@ fun getMyDate() {
 
     val repos  = retrofit.getData()
 
-    repos .enqueue(object : Callback<List<CatsItem>?> {
+    repos.enqueue(object : Callback<List<CatsItem>?> {
         override fun onResponse(call: Call<List<CatsItem>?>, response: Response<List<CatsItem>?>) {
            val responseBody = response.body()!!
 
